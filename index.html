@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Dyre Bernal Psicólogo</title>
+<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--pet:#0F3F49;--vino:#48182F;--turq:#338C95;--malva:#967082;--crema:#EDE6E0;--card:#F7F3EF;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:inherit;margin:0}html{color-scheme:light;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--crema);color:var(--pet);font-family:'Rosarivo',Georgia,serif;font-size:16px;min-height:100vh;overflow-x:hidden;position:relative}
+body::before{content:"";position:fixed;inset:0;background:url(assets/ojo.png) 0 0/70px auto;opacity:.13;pointer-events:none;
+-webkit-mask-image:linear-gradient(#000,transparent 85%);mask-image:linear-gradient(#000,transparent 85%)}
+.wrap{position:relative;max-width:420px;margin:0 auto;padding:0 20px 36px;text-align:center}
+.big{position:absolute;top:150px;left:50%;transform:translateX(-50%);width:430px;max-width:none;opacity:.09;pointer-events:none}
+.lan{position:relative;width:46px;height:170px;margin:0 auto -34px;z-index:1;background:var(--vino)}
+.hook{position:relative;z-index:3;display:block;margin:0 auto -30px}
+.card{position:relative;z-index:2;background:var(--card);border-radius:22px;padding:46px 22px 24px;box-shadow:0 18px 34px rgba(72,24,47,.22),0 2px 6px rgba(72,24,47,.12)}
+.card::before{content:"";position:absolute;top:14px;left:50%;width:46px;height:9px;margin-left:-23px;border-radius:6px;background:var(--crema);box-shadow:inset 0 1px 3px rgba(72,24,47,.35)}
+.logo{width:76%;display:block;margin:6px auto 14px}
+.foto{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:50% 10%;border-radius:14px;display:block;border:1px solid var(--malva)}
+h1{font-weight:400;font-size:34px;margin-top:16px;line-height:1.1}
+.pro{font-style:italic;font-size:17px;color:var(--vino);margin-top:4px}
+.meta{font-size:13px;margin-top:8px}
+.sub{font-style:italic;font-size:17px;color:var(--vino);margin:26px 0 14px}
+.btn{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;padding:15px 18px;margin-bottom:12px;border-radius:18px;border:0;background:var(--pet);color:var(--crema);font:inherit;text-align:center;text-decoration:none;cursor:pointer;box-shadow:0 6px 14px rgba(15,63,73,.2);transition:transform .15s}
+.btn:active,.btn:hover{transform:translateY(-2px)}
+
+.btn b{display:block;font-weight:400;font-size:19px}
+.btn small{display:block;font-style:italic;font-size:13px;opacity:.88;margin-top:2px}
+.arrow{margin-left:auto;font-size:20px;opacity:.7}
+#quien{display:none;background:var(--card);border:1px solid var(--malva);border-radius:18px;padding:20px;margin:-2px 0 14px;text-align:left;font-size:15px;line-height:1.55}
+#quien.on{display:block}#quien h2{font-weight:400;font-style:italic;font-size:17px;color:var(--vino);margin:12px 0 2px}#quien h2:first-child{margin-top:0}
+.libro{margin-top:14px;padding:10px 14px;border-radius:12px;background:var(--vino);color:var(--crema);font-style:italic;text-align:center}
+.pie{margin-top:22px;font-size:12px;font-style:italic;color:var(--malva)}
+@media(max-width:360px){h1{font-size:29px}.btn b{font-size:17px}.wrap{padding:0 14px 30px}}
+@media(min-width:860px){body{display:flex;align-items:center}.wrap{max-width:980px;width:100%;display:grid;grid-template-columns:380px 1fr;gap:72px;align-items:center;padding:24px 32px 40px;text-align:left}.big{left:190px;transform:translateX(-50%);top:90px}.sub{margin-top:0;font-size:24px}.btn{padding:18px 22px;border-radius:20px}.btn b{font-size:22px}.btn small{font-size:15px}#quien{font-size:16.5px}.pie{margin-top:28px}}
+.left,.right{text-align:center}#quien{text-align:left}
+</style></head><body><div class="wrap">
+<img class="big" src="assets/ojo.png" alt="">
+<div class="left"><div class="lan"></div>
+<svg class="hook" width="70" height="64" viewBox="0 0 70 64" aria-hidden="true"><path d="M8 10 H62 L56 30 H14 Z" fill="none" stroke="#8a8f94" stroke-width="5" stroke-linejoin="round"/><rect x="29" y="28" width="12" height="16" rx="3" fill="#a9aeb3" stroke="#6f757a"/><path d="M35 44 V54 Q35 62 28 60" fill="none" stroke="#8a8f94" stroke-width="6" stroke-linecap="round"/></svg>
+<div class="card"><img class="logo" src="assets/logo.png" alt="Dyre Bernal Psicólogo"><img class="foto" src="assets/foto.jpg" alt="Dyre Bernal">
+<h1>Dyre Bernal</h1><div class="pro">Psicólogo con formación clínica</div><div class="meta">Cartagena · Presencial y virtual</div><div class="meta">Bilingüe: español e inglés</div></div></div><div class="right">
+<p class="sub">Te acompaño a tu ritmo</p>
+
+
+<button class="btn" id="bq" aria-expanded="false" aria-controls="quien"><span><b>¿Quién soy yo?</b><small>Conóceme un poco</small></span></button>
+<div id="quien"><h2>¡Hola, soy Dyre!</h2><p>Soy psicólogo con formación clínica y trabajo desde Cartagena. Te acompaño, de forma presencial o virtual y en español o en inglés, a encontrar las respuestas que buscas a través de una terapia eficaz. Trabajo con adultos jóvenes de comunidades diversas y con personas con discapacidad, en un espacio seguro donde puedes ser quien eres, sin tener que justificarte.</p>
+<h2>Más allá del consultorio</h2><p>Soy artista: bailo, canto y escribo. Me encantan el cine y las buenas conversaciones, y creo que escuchar con atención es el primer gesto de la terapia.</p><div class="libro">Muy pronto publicaré mi primer libro.</div></div>
+<a class="btn" href="https://wa.me/message/HCRU76XJSIBRF1" target="_blank" rel="noopener"><span><b>Agendar cita</b><small>Escríbeme por WhatsApp</small></span></a>
+<a class="btn" href="https://forms.gle/9ct5xsxCVpdEyo6X8" target="_blank" rel="noopener"><span><b>Talleres</b><small>Inscríbete aquí</small></span></a>
+<a class="btn" href="https://www.linkedin.com/in/dyre-bernal/" target="_blank" rel="noopener"><span><b>LinkedIn</b><small>Mi trayectoria profesional</small></span></a>
+<p class="pie">Dyre Bernal Psicólogo</p></div></div>
+<script>var b=document.getElementById('bq'),q=document.getElementById('quien'),a=document.getElementById('ar');b.onclick=function(){var o=q.classList.toggle('on');b.setAttribute('aria-expanded',o);if(o)q.scrollIntoView({behavior:'smooth',block:'nearest'})}</script></body></html>
